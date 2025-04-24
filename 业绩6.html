@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科大讯飞 2025 第一季度业绩报告</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .tesla-red {
+                color: #E31937;
+            }
+            .border-tesla-red {
+                border-color: #E31937;
+            }
+            .bg-gradient-to-b-tesla {
+                background-image: linear-gradient(to bottom, transparent, #E3193733); /* Semi-transparent red */
+            }
+             .bg-gradient-to-r-tesla {
+                background-image: linear-gradient(to right, transparent, #E3193733); /* Semi-transparent red */
+            }
+            /* Animation styles */
+            .animate-fade-in-up {
+                opacity: 0;
+                transform: translateY(50px);
+                transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            }
+             .animate-scale-in {
+                 opacity: 0;
+                 transform: scale(0.9);
+                 transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+             }
+            .animated {
+                opacity: 1;
+                transform: translateY(0);
+                transform: scale(1);
+            }
+        }
+    </style>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Framer Motion CDN (Note: Direct usage for scroll animation often needs wrapper JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/framer-motion@latest/dist/framer-motion.min.js"></script>
+</head>
+<body class="bg-black text-gray-200 font-sans">
+
+    <!-- Header Title Section -->
+    <header class="container mx-auto px-6 py-16 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b-tesla opacity-20 z-0"></div>
+        <h1 class="text-5xl md:text-7xl font-bold tesla-red relative z-10 animate-fade-in-up">
+            科大讯飞
+        </h1>
+        <p class="text-2xl md:text-4xl font-bold text-white relative z-10 animate-fade-in-up" style="transition-delay: 0.2s;">
+            2025 第一季度业绩报告
+        </p>
+        <p class="text-sm text-gray-400 mt-4 relative z-10 animate-fade-in-up" style="transition-delay: 0.4s;">
+            iFLYTEK 2025 Q1 Performance Report
+        </p>
+    </header>
+
+    <!-- Main Content - Bento Grid Layout -->
+    <main class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Overall 2024 Performance -->
+        <section class="col-span-1 md:col-span-2 lg:col-span-3 bg-gray-900 rounded-lg p-8 border border-tesla-red bg-gradient-to-r-tesla animate-scale-in">
+            <h2 class="text-3xl font-bold mb-4 text-white"><i class="fas fa-chart-line tesla-red mr-3"></i>整体业绩亮点 (Overall Performance Highlights) - 2024</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="flex flex-col items-center justify-center">
+                    <p class="text-xs text-gray-400">营业收入 / Revenue</p>
+                    <p class="text-4xl md:text-5xl font-bold tesla-red mt-1">233.43</p>
+                    <p class="text-lg text-white">亿元 CNY Billion</p>
+                    <p class="text-sm text-green-500 mt-2"><i class="fas fa-arrow-up mr-1"></i> 同比增长 YoY Growth <strong class="text-white">18.79%</strong></p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                     <p class="text-xs text-gray-400">净利润 / Net Profit</p>
+                    <p class="text-4xl md:text-5xl font-bold tesla-red mt-1">5.6</p>
+                    <p class="text-lg text-white">亿元 CNY Billion</p>
+                     <p class="text-sm text-red-500 mt-2"><i class="fas fa-arrow-down mr-1"></i> 同比下滑 YoY Decrease <strong class="text-white">14.78%</strong></p>
+                </div>
+                 <div class="flex flex-col items-center justify-center">
+                     <p class="text-xs text-gray-400">扣非后净利润 / Non-GAAP Net Profit</p>
+                    <p class="text-4xl md:text-5xl font-bold tesla-red mt-1">1.88</p>
+                    <p class="text-lg text-white">亿元 CNY Billion</p>
+                     <p class="text-sm text-green-500 mt-2"><i class="fas fa-arrow-up mr-1"></i> 同比增幅 YoY Growth <strong class="text-white">59.36%</strong></p>
+                </div>
+            </div>
+             <p class="text-sm text-gray-300 mt-6">
+                 <i class="fas fa-info-circle mr-2"></i> 科大讯飞 (002230) 2024年年度报告新鲜出炉，全年实现营业收入233.43亿元，同比增长18.79%；净利润为5.6亿元，同比下滑14.78%；扣非后净利润1.88亿元，同比增幅达59.36%。
+             </p>
+        </section>
+
+         <!-- 2024 Strategy & Focus -->
+         <section class="col-span-1 lg:col-span-1 bg-gray-900 rounded-lg p-8 border border-tesla-red animate-fade-in-up">
+             <h3 class="text-2xl font-bold mb-4 text-white"><i class="fas fa-bullseye tesla-red mr-2"></i>战略聚焦 (Strategic Focus) - 2024</h3>
+             <p class="text-base text-gray-300">
+                 2024年, 科大讯飞在自主可控平台上快速推动大模型研发, 探索大模型应用落地的重点产品方向, 并对公司业务结构进行优化调整, 持续巩固核心赛道优势。
+             </p>
+              <p class="text-sm text-gray-400 mt-4">
+                  <i class="fas fa-microchip mr-2"></i> Large Model R&D on self-controlled platform
+              </p>
+              <p class="text-sm text-gray-400 mt-1">
+                   <i class="fas fa-rocket mr-2"></i> Application exploration
+              </p>
+              <p class="text-sm text-gray-400 mt-1">
+                   <i class="fas fa-cogs mr-2"></i> Business structure optimization
+              </p>
+         </section>
+
+        <!-- Business Segment Breakdown -->
+        <section class="col-span-1 md:col-span-2 lg:col-span-2 bg-gray-900 rounded-lg p-8 border border-tesla-red animate-fade-in-up">
+            <h3 class="text-2xl font-bold mb-4 text-white"><i class="fas fa-cubes tesla-red mr-2"></i>业务板块细分 (Business Segment Breakdown) - 2024</h3>
+
+            <div class="mb-6">
+                <h4 class="text-xl font-semibold text-white mb-2"><i class="fas fa-share-alt tesla-red mr-2"></i>开放平台及消费者业务 (Open Platform & Consumer)</h4>
+                <p class="text-sm text-gray-400">Revenue: 78.86 亿元 / CNY Billion</p>
+                 <p class="text-sm text-green-500"><i class="fas fa-arrow-up mr-1"></i> YoY Growth: <strong class="text-white">~28%</strong></p>
+                 <p class="text-sm text-gray-400">占总营收比重 % of Total Revenue: <strong class="text-white">33.78%</strong></p>
+                 <div class="ml-4 mt-2">
+                     <p class="text-sm text-gray-300"><i class="fas fa-code-branch mr-1"></i> 开放平台 (Open Platform) Revenue: 51.72 亿元</p>
+                     <p class="text-xs text-green-500 ml-4"><i class="fas fa-arrow-up mr-1"></i> YoY Growth: <strong class="text-white">31.33%</strong></p>
+                     <p class="text-sm text-gray-300 mt-1"><i class="fas fa-headset mr-1"></i> 智能硬件 (Smart Hardware) Revenue: 20.23 亿元</p>
+                     <p class="text-xs text-green-500 ml-4"><i class="fas fa-arrow-up mr-1"></i> YoY Growth: <strong class="text-white">25.07%</strong></p>
+                 </div>
+            </div>
+
+            <div class="mb-6">
+                 <h4 class="text-xl font-semibold text-white mb-2"><i class="fas fa-graduation-cap tesla-red mr-2"></i>智慧教育业务 (Smart Education)</h4>
+                 <p class="text-sm text-gray-400">Revenue: 72.29 亿元 / CNY Billion</p>
+                 <p class="text-sm text-green-500"><i class="fas fa-arrow-up mr-1"></i> YoY Growth: <strong class="text-white">29.94%</strong></p>
+                 <p class="text-sm text-gray-400">占总营收比重 % of Total Revenue: <strong class="text-white">30.97%</strong></p>
+                 <p class="text-sm text-gray-300 mt-2"><i class="fas fa-robot mr-1"></i> AI学习机销量 (AI Learning Machine Sales) - 2024 前三季度 (Q1-Q3):</p>
+                 <p class="text-base text-green-500 ml-4 font-bold"><i class="fas fa-chart-line mr-1"></i> 增长超过 100% (Growth > 100%)</p>
+            </div>
+
+            <div>
+                 <h4 class="text-xl font-semibold text-white mb-2"><i class="fas fa-lightbulb tesla-red mr-2"></i>其他亮眼业务 (Other Highlights)</h4>
+                 <div class="ml-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+                     <div>
+                        <p class="text-sm text-gray-300"><i class="fas fa-car mr-1"></i> 智慧汽车 (Smart Car)</p>
+                        <p class="text-sm text-gray-400">Revenue: 9.89 亿元</p>
+                        <p class="text-xs text-green-500"><i class="fas fa-arrow-up mr-1"></i> YoY Growth: <strong class="text-white">42.16%</strong></p>
+                     </div>
+                     <div>
+                         <p class="text-sm text-gray-300"><i class="fas fa-hospital tesla-red mr-1"></i> 智慧医疗 (Smart Medical)</p>
+                         <p class="text-sm text-gray-400">Revenue: 6.92 亿元</p>
+                         <p class="text-xs text-green-500"><i class="fas fa-arrow-up mr-1"></i> YoY Growth: <strong class="text-white">28.18%</strong></p>
+                     </div>
+                      <div>
+                         <p class="text-sm text-gray-300"><i class="fas fa-building tesla-red mr-1"></i> 企业AI解决方案 (Enterprise AI Solutions)</p>
+                         <p class="text-sm text-gray-400">Revenue: 6.43 亿元</p>
+                         <p class="text-xs text-green-500"><i class="fas fa-arrow-up mr-1"></i> YoY Growth: <strong class="text-white">122.56%</strong></p>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- iFLYTEK Medical IPO -->
+        <section class="col-span-1 md:col-span-2 lg:col-span-1 bg-gray-900 rounded-lg p-8 border border-tesla-red animate-fade-in-up" style="transition-delay: 0.1s;">
+            <h3 class="text-2xl font-bold mb-4 text-white"><i class="fas fa-hospital tesla-red mr-2"></i>讯飞医疗上市 (iFLYTEK Medical IPO)</h3>
+            <p class="text-base text-gray-300">
+                2024年12月30日, 科大讯飞医疗板块子公司<span class="tesla-red font-semibold">讯飞医疗</span> (<a href="https://www.hkexnews.hk/listedco/listconews/advancedsearch/search_active_main.aspx?stockid=02506" target="_blank" class="underline tesla-red hover:text-white transition">02506.HK</a>) 成功在港股上市。
+            </p>
+             <p class="text-sm text-gray-400 mt-4"><i class="fas fa-file-alt mr-2"></i> 据此前披露的年报, 讯飞医疗2024年GBC三端收入分别同比:</p>
+             <div class="flex justify-around mt-4 text-center">
+                 <div>
+                     <p class="text-xs text-gray-400">G端 (Government)</p>
+                     <p class="text-2xl font-bold tesla-red">10%</p>
+                     <p class="text-sm text-green-500"><i class="fas fa-arrow-up"></i> Growth</p>
+                 </div>
+                 <div>
+                     <p class="text-xs text-gray-400">B端 (Business)</p>
+                     <p class="text-2xl font-bold tesla-red">103%</p>
+                      <p class="text-sm text-green-500"><i class="fas fa-arrow-up"></i> Growth</p>
+                 </div>
+                 <div>
+                     <p class="text-xs text-gray-400">C端 (Consumer)</p>
+                     <p class="text-2xl font-bold tesla-red">57%</p>
+                      <p class="text-sm text-green-500"><i class="fas fa-arrow-up"></i> Growth</p>
+                 </div>
+             </div>
+        </section>
+
+         <!-- R&D Investment & Staff -->
+         <section class="col-span-1 md:col-span-2 lg:col-span-2 bg-gray-900 rounded-lg p-8 border border-tesla-red bg-gradient-to-b-tesla animate-fade-in-up" style="transition-delay: 0.2s;">
+             <h3 class="text-2xl font-bold mb-4 text-white"><i class="fas fa-flask tesla-red mr-2"></i>研发强度与投入 (R&D Strength & Investment) - 2024</h3>
+              <p class="text-base text-gray-300 mb-4">
+                  作为AI龙头, 科大讯飞一直保持较高的研发强度。
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                 <div>
+                     <p class="text-sm text-gray-400">研发投入 / R&D Investment</p>
+                     <p class="text-4xl md:text-5xl font-bold tesla-red mt-1">45.8</p>
+                     <p class="text-lg text-white">亿元 CNY Billion</p>
+                     <p class="text-sm text-green-500 mt-2"><i class="fas fa-arrow-up mr-1"></i> 同比增长 YoY Growth <strong class="text-white">19.37%</strong></p>
+                     <p class="text-sm text-gray-400 mt-2">占营收比重 % of Revenue: <strong class="text-white">19.62%</strong></p>
+                 </div>
+                 <div>
+                     <p class="text-sm text-gray-400">新增研发投入 (大模型等) / New R&D Investment (Large Models etc.)</p>
+                     <p class="text-4xl md:text-5xl font-bold tesla-red mt-1">7.4</p>
+                      <p class="text-lg text-white">亿元 CNY Billion</p>
+                      <p class="text-sm text-gray-400 mt-2">
+                          <i class="fas fa-laptop-code mr-1"></i> 用于大模型研发、核心技术自主可控、大模型应用落地等方向。
+                      </p>
+                 </div>
+              </div>
+               <div class="mt-6">
+                     <p class="text-sm text-gray-400">研发人员 (截至2024年末) / R&D Staff (End of 2024)</p>
+                     <div class="flex items-center mt-2">
+                          <p class="text-3xl font-bold tesla-red mr-3">9752</p>
+                          <p class="text-lg text-white">人 Persons</p>
+                     </div>
+                     <p class="text-sm text-gray-400 mt-1">占总人数比重 % of Total Staff: <strong class="text-white">62.71%</strong></p>
+               </div>
+         </section>
+
+         <!-- Spark X1 Model Upgrade -->
+         <section class="col-span-1 md:col-span-2 lg:col-span-3 bg-gray-900 rounded-lg p-8 border border-tesla-red animate-scale-in" style="transition-delay: 0.3s;">
+             <h3 class="text-2xl font-bold mb-4 text-white"><i class="fas fa-meteor tesla-red mr-2"></i>星火大模型升级 (Spark Large Model Upgrade)</h3>
+             <p class="text-base text-gray-300">
+                 4月20日, <span class="tesla-red font-semibold">科大讯飞深度推理大模型——星火X1</span>迎来全新升级, 实现数学、代码、逻辑推理、文本生成、语言理解、知识问答等通用任务效果显著提升。
+             </p>
+             <p class="text-sm text-gray-400 mt-4">
+                  <i class="fas fa-chart-bar mr-2"></i> 在模型参数比业界同类模型小一个数量级的情况下, 整体效果对标 <span class="text-white">OpenAI o1</span> 和 <span class="text-white">DeepSeek R1</span>。
+             </p>
+              <div class="mt-4 text-sm text-gray-500 flex flex-wrap">
+                   <span class="mr-4"><i class="fas fa-calculator mr-1"></i> Math</span>
+                   <span class="mr-4"><i class="fas fa-code mr-1"></i> Code</span>
+                   <span class="mr-4"><i class="fas fa-brain mr-1"></i> Logic</span>
+                   <span class="mr-4"><i class="fas fa-file-alt mr-1"></i> Text Gen</span>
+                    <span class="mr-4"><i class="fas fa-language mr-1"></i> Language Understanding</span>
+                    <span class="mr-4"><i class="fas fa-question-circle mr-1"></i> QA</span>
+              </div>
+         </section>
+
+    </main>
+
+    <!-- Footer (Optional but good practice) -->
+    <footer class="container mx-auto px-6 py-8 text-center text-gray-500 text-sm">
+        © 2024 iFLYTEK. Performance Report Summary.
+    </footer>
+
+    <!-- JavaScript for Scroll Animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateElements = document.querySelectorAll('.animate-fade-in-up, .animate-scale-in');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            }, {
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            });
+
+            animateElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+</body>
+</html>
